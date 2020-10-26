@@ -1,0 +1,12 @@
+#container {
+    width: 700px;
+    height: 800px;
+    position: relative;
+    background-image:url("css/Image/DeepDesign.jpg") ;
+  }
+  #animate {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background-image:url("css/Image/DeepDesign.gif") ;
+  }

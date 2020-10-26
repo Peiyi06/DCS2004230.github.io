@@ -1,0 +1,15 @@
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.article{
+  font-size: medium;
+  padding: 20px;
+  width: 90%;
+  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkred;
+  text-shadow: 2px 4px 4px rgb(248, 165, 165);
+}

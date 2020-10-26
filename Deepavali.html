@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  		<title>Happy Deepavali</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/Mainpage.css">
+        <link rel="stylesheet" href="css/Christmas.css">
+        <link rel="stylesheet" href="Deepavali.css">
+
+        <script>
+            function mOver(obj) {
+              obj.innerHTML = "Wish you enjoy holiday"
+            }
+            
+            function mOut(obj) {
+              obj.innerHTML = "Happy Deepavali"
+            }
+            </script>
+
+    </head>
+
+    <body style="background-color: #7827a7;">
+
+        <marquee direction="right" behavior="alternate" loop=0>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+        style="background-color:#692e8b;width:200;height:20px;padding:40px;color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: larger;">
+        Happy Deepavali</div></marquee>
+
+        <p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 450) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+    </body>
+</html>

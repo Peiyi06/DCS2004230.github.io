@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  		<title>Holiday Greeting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/Mainpage.css">
+
+        <script>
+          unction()
+{
+var firsttext = getUrlVars()["name"];
+var editedname = firsttext.replace("~", "%20");
+var editedname2 = editedname.replace("~", "%20");
+var editedname3 = editedname2.replace("~", "%20");
+var editedname4 = editedname3.replace("~", "%20");
+window.location = 'http://dcs5604.com/cny20201.html?text='+editedname4;
+}
+function getUrlVars() {
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      vars[key] = value;
+  });
+  return vars;
+}
+function getmytext() {
+var mytext = getUrlVars()["text"];
+alert(mytext);
+}
+function sendtowhatsapp()
+{
+var mytext = getUrlVars()["text"];
+var inputVal = document.getElementById("textboxid").value;
+var outputVal = inputVal.replace(" ", "~");
+var outputVal2 = outputVal.replace(" ", "~");
+var outputVal3 = outputVal2.replace(" ", "~");
+var outputVal4 = outputVal3.replace(" ", "~");
+window.location = 'http://wa.me/?text='+inputVal+' wishing you a Happy Chinese New Year 2020 %0A%0AOpen this ðŸ‘‡ %0A%0Adcs5604.com/cny2020.html?name='+outputVal4;
+}
+function loadname() {
+var mytext = getUrlVars()["text"];
+var mytext2 = mytext.replace("%20", "&nbsp");
+var mytext3 = mytext2.replace("%20", "&nbsp");
+var mytext4 = mytext3.replace("%20", "&nbsp");
+var mytext5 = mytext4.replace("%20", "&nbsp");
+document.write("<p class='aligncenter'><b><font size='600' face='verdana' color='yellow'> " + mytext5.big() + "</font></b></p>");
+}
+function requestFullScreen(element) {
+  // Supports most browsers and their versions.
+  var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+  if (requestMethod) { // Native full screen.
+      requestMethod.call(element);
+  } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+      var wscript = new ActiveXObject("WScript.Shell");
+      if (wscript !== null) {
+          wscript.SendKeys("{F11}");
+      }
+  }
+}
+function toggleImage() {
+  if (document.getElementById("toggleImage").src == "http://dcs5604.com/firecrackerbf1.gif") 
+  {
+      document.getElementById("toggleImage").src = "http://dcs5604.com/firecrackers1.gif";
+  var catMusic = new Audio("firecracker.mp3");
+  catMusic.play();
+  }
+
+setTimeout('testjs()', 3000);
+
+}
+function wait(ms){
+ var start = new Date().getTime();
+ var end = start;
+ while(end < start + ms) {
+   end = new Date().getTime();
+}
+}
+      </script>
+    </head>
+
+<body style="background-color: black;">
+
+    <nav>
+        <div class="logo">
+            <a href="Mainpage.html">Happy<em> Holiday</em></a>
+            <a href="ChineseNewYear.html">Chinese New Year</a>
+            <a href="HariRaya.html">Hari Raya</a>
+            <a href="Deepavali.html">Deepavali</a>
+            <a href="Christmas.html">Merry Christmas</a>
+        </div>
+        <div class="">
+        <span></span>
+      </div>
+    </nav>
+
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+              <h1>Holiday<em> Greeting</em></h1>
+              <p>Greetings of the Season and Best Wishes for you</p>
+              </div>
+        </div>
+        <video autoplay loop muted>
+        	<source src="Greetingvideo.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+<!--- Design Part-->
+    <div class="bgimg-1">
+        <div class="caption">
+      
+        <span class="border">
+          <a href="ChineseNewYear.html" target="_blank" style="color: rgb(161, 194, 255);"> Happy Chinese New Years</span></a>
+        </div>
+      </div>
+      
+      <div style="color: white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;color: cyan;">Chinese New Year</h3>
+        <p>Chinese New Year is the Chinese festival that celebrates the beginning of a new year on the traditional Chinese calendar. The festival is commonly referred to as the Spring Festival in China as the spring season in the lunisolar calendar traditionally starts with lichun, the first of the twenty-four solar terms which the festival celebrates around the time of. Marking the end of winter and the beginning of the spring season, observances traditionally take place from New Year's Eve, the evening preceding the first day of the year to the Lantern Festival, held on the 15th day of the year. The first day of Chinese New Year begins on the new moon that appears between 21 January and 20 February. In 2021, the first day of the Chinese New Year will be on Friday, 12 February, which is the Year of the Ox</p>
+      </div>
+      
+      <div class="bgimg-2">
+        <div class="caption">
+        <span class="border">
+          <a href="HariRaya.html" target="_blank" style="color: rgb(161, 194, 255);">Selamat Hari Raya Aidiladha</span></a>
+        </span>
+        </div>
+      </div>
+      
+      <div style="position:relative;">
+        <div style="color: white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;color: cyan;">Hari Raya Aidiladha</h3>
+            <p>Hari Raya Aidiladha, Hari Raya Korban or Hari Raya Haji is a festival celebrated by Muslims around the world. This festival is the largest festival in Islam besides Aidilfitri which is celebrated every 1 Syawal. Aidiladha is celebrated on the 10th, 11th, 12th and 13th day of the month of Zulhijjah every year. Starting with Takbir Aidiladha on the night of 10 Zulhijjah, followed by the Aidiladha sunat prayers and the Aidiladha sermon on the morning of 10 Zulhijjah, the celebration is followed by sacrificial worship that can be done either on 10, 11, 12 or during the day 13 Zulhijjah, all these times are called Hari Tasyrik.</p>
+        </div>
+      </div>
+      
+      <div class="bgimg-3">
+        <div class="caption">
+        <span class="border">
+          <a href="Deepavali.html" target="_blank" style="color: rgb(161, 194, 255);">Hari Deepavali</span></a>
+        </span>
+        </div>
+      </div>
+      
+      <div style="position:relative;">
+        <div style="color: white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;color: cyan;">Hari Deepavali</h3>
+            <p>The celebration of Deepavali or Diwali is a festival among Hindus signifying victory by the power of good over the power of evil, symbolically addressed in the sense of light that illuminates the darkness. The implicit meaning is to instill positive values in ourselves to become better individuals by overcoming negative values in ourselves for spiritual development.
+
+            Deepavali day begins with rubbing sesame oil on the head and body to cool the body, followed by a prayer ceremony with family members at home and blessings from parents and parents before going to the temple. Everyone will be wearing new clothes, sharing sweets specially prepared for Deepavali as well as visiting the homes of relatives and friends. At night, lights were lit and fireworks and fireworks enlivened the celebration.</p>
+        </div>
+      </div>
+
+      <div class="bgimg-4">
+        <div class="caption">
+        <span class="border">
+          <a href="Christmas.html" target="_blank" style="color: rgb(161, 194, 255);">Merry Christmas</span></a>
+        </span>
+        </div>
+      </div>
+      
+      <div style="position:relative;">
+        <div style="color: white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;color: cyan;">Merry Christmas</h3>
+            <p>Christmas (or Feast of the Nativity) is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world.A feast central to the Christian liturgical year, it is preceded by the season of Advent or the Nativity Fast and initiates the season of Christmastide, which historically in the West lasts twelve days and culminates on Twelfth Night;in some traditions, Christmastide includes an octave.Christmas Day is a public holiday in many of the world's nations,is celebrated religiously by a majority of Christians, as well as culturally by many non-Christians, and forms an integral part of the holiday season centered around it.</p>
+        </div>
+      </div>
+
+      <div>
+        <font size="6" color="white"><b>Send E-card: </b></font>
+          <input onfocus="if(this.value == 'Enter your name') { this.value = ''; }" type="text" id="textboxid" name="myname" value="Enter your name">
+          <img onclick="sendtowhatsapp();" src="css/Image/whatsapp.png" alt="whatsapp" align="center" style="max-width:40;height:40;">
+      </div>
+</body>
+</html>

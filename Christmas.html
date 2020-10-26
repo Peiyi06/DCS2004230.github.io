@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title>Holiday Greeting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="css/Mainpage.css">
+        <link rel="stylesheet" href="css/Christmas.css">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      </script>
+      <script>
+         function functionAlert(msg, myYes) {
+            var confirmBox = $("#confirm");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function() {
+               confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+         }
+      </script>
+    
+    </head>
+
+    <body style="background-color: black;">
+
+      <div id="video-container">
+            <div class="video-overlay"></div>
+            <div class="video-content">
+                <div class="inner">
+                    <marquee behavior="alternate" loop=0>
+                        <h1>Merry Christmas</h1>
+                        <p>Wishing you and your loved ones peace in christmas seasons</p>
+                    </marquee>
+                  </div>
+            </div>
+            <video autoplay loop muted>
+                <source src="MCBakground.mp4">
+            </video>
+        </div>
+        </div>  
+
+      <div class="row">
+            <div class="column">
+                <video autoplay loop muted width="500px">
+                    <source src="MCDesign.mp4">
+                </video>
+            </div>
+
+            <div class="column">
+                <video autoplay loop muted width="500px">
+                    <source src="Snowing.mp4">
+                </video>
+            </div>
+            
+            <div class="column">
+                <video autoplay loop muted width="500px">
+                    <source src="MCDesign.mp4">
+                </video>
+            </div>
+        </div>
+
+        <p><a href="ChristmasCard.html">Receive Wishing Card Here!</a></p>
+    </body>
+</html>
